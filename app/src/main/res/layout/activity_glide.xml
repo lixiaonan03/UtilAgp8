@@ -56,7 +56,7 @@
                  android:id="@+id/ivWrap"
                  android:layout_width="wrap_content"
                  android:layout_marginTop="10dp"
-                android:adjustViewBounds="true"
+                 android:adjustViewBounds="true"
                  android:background="@color/common_red"
                  android:layout_height="wrap_content"/>
 
@@ -70,13 +70,27 @@
                  android:id="@+id/iv100dp"
                  android:layout_width="100dp"
                  android:layout_marginTop="10dp"
+                 android:background="#100100"
                  android:layout_height="100dp"/>
              <ImageView
                  android:id="@+id/iv150dp"
                  android:layout_width="150dp"
                  android:layout_marginTop="10dp"
+                 android:background="#150150"
                  android:layout_height="150dp"/>
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="网络获取图片的ivWrap"
+                android:textSize="14sp" />
+            <com.lxn.util.view.MyImageView
+                android:id="@+id/ivNetWorkWarp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
 
 
         </androidx.appcompat.widget.LinearLayoutCompat>
