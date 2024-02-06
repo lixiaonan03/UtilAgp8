@@ -29,6 +29,9 @@
         <activity
             android:name=".glide.GlideActivity"
             android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".lifecycle.LifeCycleActivity"
+            android:screenOrientation="fullSensor" />
 
         <!-- util 工具类相关的 -->
         <provider

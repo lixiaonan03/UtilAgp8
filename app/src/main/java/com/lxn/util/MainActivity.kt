@@ -48,6 +48,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.core.view.updatePadding
 import com.lxn.util.glide.GlideActivity
+import com.lxn.util.lifecycle.LifeCycleActivity
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -118,6 +119,10 @@ fun ContentComposable() {
         ItemComposable("Glide 学习") {
             //跳转Glide 学习的
             GlideActivity.startActivity(context as MainActivity)
+        }
+        ItemComposable("lifeCycle 学习") {
+            //跳转Glide 学习的
+            LifeCycleActivity.startActivity(context as MainActivity)
         }
 
         repeat(20) {
