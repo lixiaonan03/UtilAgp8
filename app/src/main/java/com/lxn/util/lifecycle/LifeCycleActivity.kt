@@ -22,6 +22,7 @@ import com.lxn.util.util.operationutil.Utils
 /**
  * lifeCycle 生命周期的学习的
  * https://zhuanlan.zhihu.com/p/484383470
+ * https://github.com/jhbxyz/ArticleRecord/blob/master/articles/Jetpack/1Lifecycle%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E5%92%8C%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90.md
  */
 class LifeCycleActivity : BaseActivity() {
     //进入当前页面
