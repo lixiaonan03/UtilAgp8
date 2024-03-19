@@ -49,6 +49,7 @@ import androidx.core.view.WindowInsetsControllerCompat
 import androidx.core.view.updatePadding
 import com.lxn.util.glide.GlideActivity
 import com.lxn.util.lifecycle.LifeCycleActivity
+import com.lxn.util.net.NetActivity
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -121,8 +122,12 @@ fun ContentComposable() {
             GlideActivity.startActivity(context as MainActivity)
         }
         ItemComposable("lifeCycle 学习") {
-            //跳转Glide 学习的
+            //生命周期 学习的
             LifeCycleActivity.startActivity(context as MainActivity)
+        }
+        ItemComposable("网络库 学习") {
+            //网络库 学习的
+            NetActivity.startActivity(context as MainActivity)
         }
 
         repeat(20) {

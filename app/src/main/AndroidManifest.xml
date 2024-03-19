@@ -32,6 +32,9 @@
         <activity
             android:name=".lifecycle.LifeCycleActivity"
             android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".net.NetActivity"
+            android:screenOrientation="fullSensor" />
 
         <!-- util 工具类相关的 -->
         <provider

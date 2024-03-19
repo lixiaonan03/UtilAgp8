@@ -74,5 +74,17 @@ dependencies {
     //Glide 的学习
     implementation("com.github.bumptech.glide:glide:4.16.0")
 
+    //retrofit 学习
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.google.code.gson:gson:2.9.1")
+
+    //okhttp 网络库的 define a BOM and its version
+    implementation(platform("com.squareup.okhttp3:okhttp-bom:4.12.0"))
+    // define any required OkHttp artifacts without version
+    implementation("com.squareup.okhttp3:okhttp")
+    implementation("com.squareup.okhttp3:logging-interceptor")
+
+
 
 }

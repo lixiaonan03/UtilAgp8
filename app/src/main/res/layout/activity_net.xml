@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/common_white"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/linTop"
+        layout="@layout/tool_top_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp"
+        android:scrollbars="none">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:divider="@drawable/lin_divider"
+            android:gravity="center_horizontal"
+            app:showDividers="middle">
+
+
+            <TextView
+                android:id="@+id/tvNetRetrofit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/login_button"
+                android:gravity="center"
+                android:text="retrofit正常请求网络"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvNetRetrofitForKt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/login_button"
+                android:gravity="center"
+                android:text="retrofit 通过协程访问的"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvNetContentRetrofit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                tools:text="retrofit正常请求网络"
+                android:textSize="14sp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
